@@ -71,7 +71,19 @@ The vulnerable application was kept inside the isolated laboratory environment.
 ---
 
 ## ⚔️ Security Testing & Evidence
-- ff
+### Test 1: Sql Injection (Sqli)
+- ggg
+
+### Test 2: Cross-Site Scripting (XSS)
+- ggg
+
+### Test 3: Brute Force Login Attack
+- ggg
+
+### Test 1: Port Scanning
+- ggg
+
+
 
 ---
 
