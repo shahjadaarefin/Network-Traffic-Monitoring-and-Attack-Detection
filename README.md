@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 The objective of this project was to monitor network traffic and detect suspicious activities using **Suricata IDS and Wireshark** in a controlled lab environment.
 
-The project focused on detecting and analyzing SQL injection attempts, cross-site scripting (XSS), brute-force-related alerts, ICMP ping activity, and network port scanning. Suricata rules and alert logs were used to identify potential threats, while Wireshark was used for packet-level traffic analysis.
+The project focused on detecting and analyzing SQL injection attempts, cross-site scripting (XSS), brute-force-related alerts, ICMP ping activity. Suricata rules and alert logs were used to identify potential threats, while Wireshark was used for packet-level traffic analysis.
 
 ---
 
