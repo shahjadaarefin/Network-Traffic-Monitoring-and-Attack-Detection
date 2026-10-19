@@ -75,6 +75,7 @@ The vulnerable application was kept inside the isolated laboratory environment.
 ### Test 1: Sql Injection (Sqli)
 - **Wireshark – SQL Injection Packet Analysis**
 Wireshark was used to inspect the captured HTTP request to the DVWA SQL injection endpoint. The request contains the URL-encoded payload `1' OR 1=1#`, which represents a SQL injection test attempt.
+
 ![Ref 4.2: Wireshark SQL Injection Traffic](images/sqli-wireshark.png)
 
 ### Test 2: Cross-Site Scripting (XSS)
