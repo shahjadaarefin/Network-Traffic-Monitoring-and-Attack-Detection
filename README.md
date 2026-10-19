@@ -73,19 +73,37 @@ The vulnerable application was kept inside the isolated laboratory environment.
 
 ## ⚔️ Security Testing & Evidence
 ### Test 1: Sql Injection (Sqli)
+- **Suricata – SQL Injection Alert**
+The Suricata alert log shows the SQL injection detection, including the signature ID, source IP address, destination IP address, and destination port. This helps identify and investigate suspicious web traffic.
+
+![Suricata SQL Injection Alert](images/sqli-suricata.png)
+
 - **Wireshark – SQL Injection Packet Analysis**
 Wireshark was used to inspect the captured HTTP request to the DVWA SQL injection endpoint. The request contains the URL-encoded payload `1' OR 1=1#`, which represents a SQL injection test attempt.
 
-![Ref 4.2: Wireshark SQL Injection Traffic](images/sqli-wireshark.png)
+![Wireshark SQL Injection Traffic](images/sqli-wireshark.png)
 
 ### Test 2: Cross-Site Scripting (XSS)
-- ggg
+- **Suricata – XSS Alert**
+The Suricata alert log shows the XSS detection, including the signature ID, source IP address, destination IP address, and destination port. This helps identify and investigate suspicious web requests that may contain XSS payloads.
+
+- **Wireshark – XSS Packet Analysis**
+Wireshark was used to inspect the captured HTTP requests associated with suspected XSS activity. The packet details can help identify request parameters and investigate potential XSS payloads.
 
 ### Test 3: Brute Force Login Attack
-- ggg
+- **Suricata – Brute Force Login Alert**
+Suricata was used to monitor network traffic and generate alerts associated with suspicious login activity. The alert logs can help identify and investigate potential brute force attempts.
 
-### Test 1: Port Scanning
-- ggg
+- **Wireshark – Brute Force Login Traffic Analysis**
+
+Wireshark was used to inspect the captured network traffic associated with repeated login attempts against the web application. Reviewing the HTTP requests can help identify repeated authentication attempts that may indicate a brute force login attack.
+
+### Test 1: ICMP Ping Detection
+- **Suricata – ICMP Ping Alert**
+The Suricata alert log shows the ICMP ping detection, including the signature, source IP address, and destination IP address. This helps identify ping activity between hosts.
+
+- **Wireshark – ICMP Packet Analysis**
+Wireshark was used to inspect ICMP packets exchanged between the source and target hosts. The packet list and ICMP details help investigate echo requests and replies.
 
 
 
