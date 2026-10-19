@@ -78,7 +78,6 @@ The vulnerable application was kept inside the isolated laboratory environment.
 The Suricata alert log shows the SQL injection detection, including the signature ID, source IP address, destination IP address, and destination port. This helps identify and investigate suspicious web traffic.
 
 ![Suricata SQL Injection Alert](images/sqli-suricata.png)
-
 - **Wireshark – SQL Injection Packet Analysis:**
 
 Wireshark was used to inspect the captured HTTP request to the DVWA SQL injection endpoint. The request contains the URL-encoded payload `1' OR 1=1#`, which represents a SQL injection test attempt.
