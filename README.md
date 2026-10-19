@@ -109,46 +109,48 @@ PCAP, EVE JSON, and Fast Log Files — Network and alert evidence.
 
 The Suricata alert log shows the SQL injection detection, including the signature ID, source IP address, destination IP address, and destination port. This helps identify and investigate suspicious web traffic.
 
-![Suricata SQL Injection Alert](images/sqli-suricata.png)
+![Suricata SQLI Injection Alert](images/sqli-suricata.png)
 - **Wireshark – SQL Injection Packet Analysis:**
 
 Wireshark was used to inspect the captured HTTP request to the DVWA SQL injection endpoint. The request contains the URL-encoded payload `1' OR 1=1#`, which represents a SQL injection test attempt.
 
-![Wireshark SQL Injection Traffic](images/sqli-wireshark.png)
+![Wireshark SQLI Injection Traffic](images/sqli-wireshark.png)
 
 ### Test 2: Cross-Site Scripting (XSS)
 - **Suricata – XSS Alert:**
 
 The Suricata alert log shows the XSS detection, including the signature ID, source IP address, destination IP address, and destination port. This helps identify and investigate suspicious web requests that may contain XSS payloads.
 
-![Suricata SQL Injection Alert](images/sqli-suricata.png)
+![Suricata XSS Injection Alert](images/xss-suricata.png)
 - **Wireshark – XSS Packet Analysis:**
 
 Wireshark was used to inspect the captured HTTP requests associated with suspected XSS activity. The packet details can help identify request parameters and investigate potential XSS payloads.
+
+![Wireshark XSS Injection Traffic](images/xss-wireshark.png)
 
 ### Test 3: Brute Force Login Attack
 - **Suricata – Brute Force Login Alert:**
 
 Suricata was used to monitor network traffic and generate alerts associated with suspicious login activity. The alert logs can help identify and investigate potential brute force attempts.
 
-![Suricata SQL Injection Alert](images/sqli-suricata.png)
+![Suricata Brute Force Login Alert](images/brute_force-suricata.png)
 - **Wireshark – Brute Force Login Traffic Analysis**
 
 Wireshark was used to inspect the captured network traffic associated with repeated login attempts against the web application. Reviewing the HTTP requests can help identify repeated authentication attempts that may indicate a brute force login attack.
 
-![Wireshark SQL Injection Traffic](images/sqli-wireshark.png)
+![Wireshark Brute Force Login Traffic](images/brute_force-wireshark.png)
 
-### Test 1: ICMP Ping Detection
+### Test 4: ICMP Ping Detection
 - **Suricata – ICMP Ping Alert**
 
 The Suricata alert log shows the ICMP ping detection, including the signature, source IP address, and destination IP address. This helps identify ping activity between hosts.
 
-![Suricata SQL Injection Alert](images/sqli-suricata.png)
+![Suricata ICMP Ping Alert](images/icmp-suricata.png)
 - **Wireshark – ICMP Packet Analysis**
 
 Wireshark was used to inspect ICMP packets exchanged between the source and target hosts. The packet list and ICMP details help investigate echo requests and replies.
 
-![Wireshark SQL Injection Traffic](images/sqli-wireshark.png)
+![Wireshark ICMP Ping Traffic](images/icmp-wireshark.png)
 
 ---
 
