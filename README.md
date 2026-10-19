@@ -1,4 +1,4 @@
-# 🔐 Network Security Monitoring Project
+# 🔐 Network Traffic Monitoring and Attack Detection
 
 ## 📌 Project Overview
 The objective of this project was to monitor network traffic and detect suspicious activities using **Suricata IDS and Wireshark** in a controlled lab environment.
