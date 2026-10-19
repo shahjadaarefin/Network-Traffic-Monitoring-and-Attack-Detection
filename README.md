@@ -73,35 +73,35 @@ The vulnerable application was kept inside the isolated laboratory environment.
 
 ## Skills Learned
 
-Network traffic monitoring and packet analysis.
+- Network traffic monitoring and packet analysis.
 
-Suricata IDS configuration and custom rule creation.
+- Suricata IDS configuration and custom rule creation.
 
-Security alert investigation and log analysis.
+- Security alert investigation and log analysis.
 
-Detection of SQL injection and XSS attempts.
+- Detection of SQL injection and XSS attempts.
 
-Identification of brute-force-related alerts and port scanning.
+- Identification of brute-force-related alerts.
 
-Analysis of ICMP traffic and suspicious network connections.
+- Analysis of ICMP traffic and suspicious network connections.
 
-Understanding of network protocols, source IPs, destination IPs, and ports.
+- Understanding of network protocols, source IPs, destination IPs, and ports.
 
-Basic incident investigation and evidence documentation.
+- Basic incident investigation and evidence documentation.
 
 ## Tools Used
 
-Suricata IDS — Network intrusion detection and alert generation.
+- Suricata IDS — Network intrusion detection and alert generation.
 
-Wireshark — Network packet capture and analysis.
+- Wireshark — Network packet capture and analysis.
 
-Kali Linux — Security testing and traffic generation in the lab.
+- Kali Linux — Security testing and traffic generation in the lab.
 
-Linux — Command-line operations and log investigation.
+- Linux — Command-line operations and log investigation.
 
-Custom Suricata Rules — Detection of selected suspicious activities.
+- Custom Suricata Rules — Detection of selected suspicious activities.
 
-PCAP, EVE JSON, and Fast Log Files — Network and alert evidence.
+- PCAP, EVE JSON, and Fast Log Files — Network and alert evidence.
 
 ## ⚔️ Security Testing & Evidence
 ### Test 1: Sql Injection (Sqli)
@@ -152,15 +152,3 @@ Wireshark was used to inspect ICMP packets exchanged between the source and targ
 
 ![Wireshark ICMP Ping Traffic](images/icmp-wireshark.png)
 
----
-
-## 📊 Collected Evidence
-- ff
-
----
-
-## 🧠 Key Learnings
-- Intrusion detection using Suricata
-- Network traffic analysis
-- Attack pattern recognition
-- Packet-level investigation
