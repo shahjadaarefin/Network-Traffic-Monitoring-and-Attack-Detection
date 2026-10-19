@@ -65,6 +65,7 @@ The application was used to generate HTTP traffic for:
 - XSS testing
 - SQL injection testing
 - Authentication attack testing
+- ICMP ping activity
 
 The vulnerable application was kept inside the isolated laboratory environment.
 
@@ -72,7 +73,11 @@ The vulnerable application was kept inside the isolated laboratory environment.
 
 ## ⚔️ Security Testing & Evidence
 ### Test 1: Sql Injection (Sqli)
-- ggg
+- **Wireshark – SQL Injection Packet Analysis**
+
+Wireshark was used to inspect the captured HTTP request to the DVWA SQL injection endpoint. The request contains the URL-encoded payload `1' OR 1=1#`, which represents a SQL injection test attempt.
+
+![Ref 4.2: Wireshark SQL Injection Traffic](images/sqli-wireshark.png)
 
 ### Test 2: Cross-Site Scripting (XSS)
 - ggg
