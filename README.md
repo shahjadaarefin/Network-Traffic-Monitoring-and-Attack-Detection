@@ -1,9 +1,9 @@
 # 🔐 Network Security Monitoring Project
 
 ## 📌 Project Overview
-This project demonstrates real-time network traffic monitoring and attack detection using Suricata IDS and Wireshark in a controlled virtual lab environment.
+The objective of this project was to monitor network traffic and detect suspicious activities using **Suricata IDS and Wireshark** in a controlled lab environment.
 
-The lab simulates multiple cyber attacks and analyzes how they are detected at the network level.
+The project focused on detecting and analyzing SQL injection attempts, cross-site scripting (XSS), brute-force-related alerts, ICMP ping activity, and network port scanning. Suricata rules and alert logs were used to identify potential threats, while Wireshark was used for packet-level traffic analysis.
 
 ---
 
