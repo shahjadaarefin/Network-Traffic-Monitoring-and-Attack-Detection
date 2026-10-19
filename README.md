@@ -85,14 +85,17 @@ Wireshark was used to inspect the captured HTTP request to the DVWA SQL injectio
 ![Wireshark SQL Injection Traffic](images/sqli-wireshark.png)
 
 ### Test 2: Cross-Site Scripting (XSS)
-- **Suricata – XSS Alert**
+- **Suricata – XSS Alert:**
+- 
 The Suricata alert log shows the XSS detection, including the signature ID, source IP address, destination IP address, and destination port. This helps identify and investigate suspicious web requests that may contain XSS payloads.
 
-- **Wireshark – XSS Packet Analysis**
+- **Wireshark – XSS Packet Analysis:**
+- 
 Wireshark was used to inspect the captured HTTP requests associated with suspected XSS activity. The packet details can help identify request parameters and investigate potential XSS payloads.
 
 ### Test 3: Brute Force Login Attack
-- **Suricata – Brute Force Login Alert**
+- **Suricata – Brute Force Login Alert:**
+- 
 Suricata was used to monitor network traffic and generate alerts associated with suspicious login activity. The alert logs can help identify and investigate potential brute force attempts.
 
 - **Wireshark – Brute Force Login Traffic Analysis**
@@ -101,9 +104,11 @@ Wireshark was used to inspect the captured network traffic associated with repea
 
 ### Test 1: ICMP Ping Detection
 - **Suricata – ICMP Ping Alert**
+- 
 The Suricata alert log shows the ICMP ping detection, including the signature, source IP address, and destination IP address. This helps identify ping activity between hosts.
 
 - **Wireshark – ICMP Packet Analysis**
+- 
 Wireshark was used to inspect ICMP packets exchanged between the source and target hosts. The packet list and ICMP details help investigate echo requests and replies.
 
 
